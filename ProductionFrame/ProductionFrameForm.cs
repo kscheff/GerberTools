@@ -109,6 +109,7 @@ namespace ProductionFrame
                     Fiducials.Add(new PointD(OuterWidth - LE * 2.0, TE / 2.0));
                     Fiducials.Add(new PointD(OuterWidth - LE * 2.0, OuterHeight - TE / 2.0));
                     Fiducials.Add(new PointD(LE * 2.0, OuterHeight - TE / 2.0));
+                    Fiducials.Add(new PointD(OuterWidth / 2, TE / 2.0)); //generate extra non symetric fiducial
                     foreach (var A in Fiducials)
                     {
                         TopCopper.AddFlash(A, 1.0);
